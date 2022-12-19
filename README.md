@@ -10,7 +10,6 @@ def greet():
     print(" x - номер строки  ")
     print(" y - номер столбца ")
 
-
 def show():
     print()
     print("    | 0 | 1 | 2 | ")
@@ -20,7 +19,6 @@ def show():
         print(row_str)
         print("  --------------- ")
     print()
-
 
 def ask():
     while True:
@@ -48,7 +46,6 @@ def ask():
 
         return x, y
 
-
 def check_win():
     win_cord = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)), ((2, 0), (2, 1), (2, 2)),
                 ((0, 2), (1, 1), (2, 0)), ((0, 0), (1, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
@@ -64,7 +61,6 @@ def check_win():
             print("Выиграл 0!!!")
             return True
     return False
-
 
 greet()
 field = [[" "] * 3 for i in range(3)]
